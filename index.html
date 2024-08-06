@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second Assignment</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body class="inter-font">
     <header>
-        <!-- nav bar start -->
+              <!-- nav bar start -->
          <nav class="nav-bar">
+            
             <div class="nav-title">
                 <h2 class="color"> <i>Fitness</i> </h2>
             </div>
@@ -21,34 +23,42 @@
                     <li class="nav-item"><a href=""  class="nav-link">About</a></li>
                 </ul>
             </div>
+            </div>
+            <div class="bar-icon">
+                <i class="fa-solid fa-bars"></i>
+                </div>
          </nav>
 
 
          <!-- banner section start -->
-          <section class="banner-container">
-            <div class="banner-text">
-                <h1>Get body in <br> safe & stay <br> healthy</h1>
-                <p>A huge selection of health and fitness content, healthy recipes <br> and transformation stories to help you get fit and stay fit</p>
-                <div class="banner-button">
-                    <button class="btn-primary">Join Club Now!</button>
-                <button class="banner-button-two">Download App</button>
+         <section class="banner-container">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <h1>Get body in <br> <span class="font-miama">shape</span> & stay <br>healthy</h1>
+                    <p>A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
                 </div>
-             </div> 
-            <div class="banner-image">
-                <img src="./images/Images 2.png" alt="">                           
+                <div class="banner-button">
+                    <button class="btn-primary">Join Now!</button>
+                    <button class="banner-second-button">Download App</button>
+                </div>
             </div>
-            </div>
-          </section>
 
-          <div class="three-five-box">
-            <h1 class="five">500+<br>Free workout videos</h1>
-            <div class="ball"></div>
+            <div class="banner-image">
+                <img src="./images/images 2.png" alt="">
+                <div class="first-button">
+                    <h3>350+ <br> <span class="btn-p"><p>Video Tutorial</p></span></h3>
+                </div>
+                <div class="vicon"><i class="fa-solid fa-play"></i></div>
+                <div class="ball"></div>
+                <div class="second-button">
+                    <h3>500+ <br> <span class="btn-p"><p>Free Workout Videos</p></span></h3>
+                </div>
             </div>
-            <div>
-            <h1 class="three-fifty">350+ <br> Video tutorial</h1>
-            </div> 
-          <!-- banner end -->
+        </section>
     </header>
+          <!-- banner end -->
+        
+          
     <main>
         <!-- change your habit section start -->
 <section class="change-container">
@@ -95,7 +105,7 @@
     </div>
 
     <div class="run-image">
-        <img width="500px" src="./images/run-two.jpg" alt="">
+        <img src="./images/run-two.jpg" alt="">
     </div>
  </section>
   <!-- run extra mile section end -->
@@ -105,35 +115,43 @@
             <h2>Training and Exercises</h2>
             <p>We believe fitness should be accesible to everyone, <br> everywhere regardless of income or access to gym.</p>
         </div>
-        <div class="training-image">
-            <div  class="image-first-row">
-                <img src="./images/exercise11.jpg" alt="">
+        <div class="row-1">
+            <div class="image-one">
+                <img id="overlay" src="./images/exercise11.jpg" alt="">
+            <p>Leg Press</p>
             </div>
-            <div class="image-first-row">
-                <img  src="./images/exercise22.png" alt="">
+            <div class="image-two">
+                <img src="./images/exercise22.png" alt="">
+            <p>Push Up</p>
             </div>
-            <div class="image-first-row">
-                 <img src="./images/exercise33.png" alt=""> 
+            <div class="image-three">
+                <img src="./images/exercise33.png" alt="">
+            <p class="N0">Leg Press: Works the <br> quadriceps and glutes</p>
             </div>
         </div>
-        <div class="training-image-two">
-            <div class="image-second-row">
+        <div class="row-2">
+            <div class="image-oneS">
                 <img src="./images/exercise44.png" alt="">
+            <div>
+                <p>Leg Press <span class="no">: Works the <br> quadriceps and glutes</span> </p>
             </div>
-            <div class="image-second-row">
+            </div>
+            <div class="image-twoS">
                 <img src="./images/exercise55.jpg" alt="">
+            <p>Leg Press: Works the <br> quadriceps and glutes</p>
             </div>
-            <div class="image-second-row">
+            <div class="image-threeS">
                 <img src="./images/exercise66.jpg" alt="">
+            <p class="no">Leg Press: Works the <br> quadriceps and glutes</p>
             </div>
-        </div>
-        <div class="trainingimage-undertext text-center">
-            <h2>BMI Calculator</h2>
-            <p>We believe fitness should be accesible to everyone, everywhere regardless of income or <br>access to gym.</p>
         </div>
     </section>
     <!-- training section end -->
      <!-- bmi calculator section start -->
+     <div class="calculator-text text-center">
+        <h2>BMI Calculator</h2>
+        <p>We believe fitness should be accesible to everyone, everywhere regardless of income or <br>access to gym.</p>
+    </div>
       <section class="bmi-calculator-container" >
         <div class="bmi-table">
             <h3>BMI Calculator Chart</h3>
@@ -167,6 +185,7 @@
                 </table>
             </div>
         </div>
+     <div class="bmi-textt">
         <div class="calculate-text">
             <h3>Calculate Your BMI</h3>
             <p>We believe fitness should be accesible to everyone, everywhere regardless of <br> income or access to gym.</p>
@@ -178,8 +197,8 @@
             </div>
             <div class="second-two-input">
                 <input class="first-input" type="text" placeholder="Age">
-            <select class="first-input" name="" id="">
-                <option  value="">Sex</option>
+            <select class="first-select" name="" id="">
+                <option   value="">Sex</option>
             </select>
         </div>
         <select class="big-calculate-input" name="" id="">
@@ -190,10 +209,11 @@
             <button class="btn-primary">Calculate</button>
         </div>
     </div>
+     </div>
       </section>
       <!--bmi calculator section end -->
       <!-- meet our team setion start -->
-      <div class="text-center">
+      <div class="meet-text text-center">
         <h2>Meet Our Team</h2>
             <p>We believe fitness should be accesible to everyone, everywhere regardless of income or <br>access to gym.</p> 
       </div>
