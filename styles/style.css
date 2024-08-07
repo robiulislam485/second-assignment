@@ -66,52 +66,42 @@ border: none;
 /* shared style end */
 
 header {
-background: linear-gradient(
-    180deg, 
-    rgb(17, 17, 17) , 
-    rgba(119, 119, 119,) , 
-    rgb(17, 17, 17) ,
-);
+
 }
 /* nav bar style start*/
 .bar-icon {
   color: white;
+  font-size: 1rem;
   display: none;
 }
-.nav-bar {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-  margin: 57px 190px 0px 190px;
-}
-.nav-link {
-    text-decoration: none;
-    color: white;
-    
-  }
-  .nav-item{
-    list-style: none;
-  }
-  .color{
+.color{
     color:  rgb(255, 84, 0);
-  }
-  .nav-items{
-    /* width: 465px;  */
-    display: flex;
-    justify-content: space-between;
-    gap: 47px;
-    box-sizing: border-box;
-    border: 1px solid rgb(255, 255, 255, 0.1);
-    border-radius: 39px;
-    padding: 4px;
-   
-  }
+}
   .bg-color{ 
     padding: 6px 15px 6px 15px;
     background-color: rgb(230, 83, 60);
     border-radius: 46px;
   }
+  .nav-bar {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    align-items: center;
+  }
+  .nav-item {
+    text-decoration: none;
+    list-style: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .nav-option {
+    display: flex;
+    gap: 47px;
+    border: 1px solid rgba(255, 255, 255, 0.1) ;
+    border-radius: 39px;
+  }
+
   /* nav end */
   /* banner related style */
   .banner-container {
@@ -463,7 +453,6 @@ margin: 49px 0px 14px 0px;
     margin-top: 58px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 1rem;
-    border: 2px solid red;
     gap: 20px;
     position: relative;
     padding:  1rem; 
@@ -471,6 +460,7 @@ margin: 49px 0px 14px 0px;
   .meet-image-first-row  img {
     width: 100%;
     height: 300px;
+    filter: brightness(80%);
     border-radius: 15px;
   }
   .meet-image-first-row {
@@ -482,6 +472,7 @@ margin: 49px 0px 14px 0px;
   .meet-image-second-row img {
     width: 100%;
     height: 300px;
+    filter: brightness(80%);
     border-radius: 15px;
   }
   .meet-image-second-row {
@@ -508,27 +499,66 @@ margin: 49px 0px 14px 0px;
 
 /* Footer section start */
 .foot-container {
-  margin-top: 100px;
-  background: rgba(255, 255, 255, 0.3);
-  text-align: center;
-  align-items: center;
+  margin-top: 154px;
+  background: rgba(255, 255, 255, 0.1);
 }
 .foot-content {
+  max-width: 1060px;
+  margin: 20px ;
   display: flex;
-  gap: 100px;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
-
-.second-coloumn , .third-coloumn , li a {
+.first-coloumn h1 {
+ margin-top: 66px;
+ color: rgb(230, 83, 60);
+ font-size: 4.5rem;
+ font-weight: 800;
+ text-align: left;
+}
+.first-coloumn p {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: left;
+}
+.first-coloumn {
+  margin-left: 170px;
+  margin-right: 102px;
+}
+.foot-content .second-coloumn {
+  margin-right: 155px;
+  margin-left: 102px;
+} 
+.foot-content .third-coloumn {
+  margin-right: 191px;
+  margin-left: 52px;
+}
+ 
+.second-coloumn .third-coloumn, h3 {
+margin: 66px 0px 39px 0px;
+color: rgb(255, 255, 255);
+font-size: 2rem;
+font-weight: 700; 
+line-break: none;
+white-space: nowrap;
+}
+.foot-anchor {
   text-decoration: none;
-  list-style: none;
-  color: white;
-  gap: 20px; 
+  color: rgb(255, 255, 255, 0.5);
+  font-size: 1.5rem;
+  font-weight: 400;
+  white-space: nowrap;
 }
-.second-coloumn , li a {
-  gap: 30px;
+.second-coloumn .third-coloumn, li {
+margin-top: 20px;
+list-style: none;
 }
-
+hr {
+  max-width: 1060px;
+  margin: 0 auto;
+  margin-top: 79px;
+  border: 2px solid rgb(255, 255, 255, 0.1);
+}
 
 
 /*  responsive for mobile */
@@ -542,26 +572,7 @@ margin: 49px 0px 14px 0px;
     margin: 0 auto;
     border: 1px solid white; 
   }
-  
-h1 {
-  font-size: 4rem;
-}
-h2 {
-  font-size: 2.5rem;
-}
-h3 {
-font-size: 1rem;
-font-weight: 900;
-}
-h4 {
-  font-size: 1rem;
-}
-p {
-font-size: 0.9rem;
-font-weight: 400;
-}
-
-.nav-items {
+.nav-item {
   display: none;
 }
 .bar-icon {
@@ -650,7 +661,7 @@ font-size: 2rem;
   margin: 0 auto;
 }
 .big-calculate-input {
-  width: 485px;
+  width: 420px;
 }
 .bmi-table {
   margin: 0px 64px ;
@@ -671,5 +682,17 @@ br {
 }
 .meet-image-second-row {
   grid-template-columns: 1fr;
+}
+.foot-content {
+  flex-direction: column;
+  
+}
+.first-coloumn{
+margin: 0 auto;
+}
+.ffot-content
+.second-coloumn {
+  margin-right: 170px;
+  
 }
 }
