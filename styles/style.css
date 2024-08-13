@@ -531,145 +531,48 @@ margin: 49px 0px 14px 0px;
 .sub-text {
   margin-top: 88px;
 }
-.membership-container {
-  margin-top: 88px;
+.subscription {
+  background: rgb(34, 34, 34);
+  filter: brightness(90%);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 30px; 
-  border-radius: 15px;
-  padding: 1.5rem;
+  gap: 170px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 66px;
 }
-.first-card {
-  max-height: 600px;
-  background-color: #FAF9F6;
-  line-height: 20px;
-  position: relative;
-  border-radius: 15px;
-  filter: brightness(90%); 
-  margin-top: 60px;
+.left-side li {
+color: rgba(255, 255, 255, 0.5);
+font-size: 1rem;
+font-weight: 400;
 }
-.second-card:hover {
-  background-color: #ffffff;
-}
-.first-card:hover {
-  background-color: #ffffff;
-}
-.third-card:hover {
-  background-color: #ffffff;
-}
-.m-text {
-  color: black;
-  margin-left: 20px;
+.left-side h3 {
   font-size: 2rem;
-  font-weight: 800;
-  line-height: 2px;
+  font-weight: 700;
 }
-.m-text1 {
-  color: rgb(255, 84, 0);
-  margin: 5px 40px 0px 20px;
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 2px;
-  position: relative;
-}
-.price-button {
-  width: 100px;
-  height: 40px;
-  margin: 10px 0px 40px 300px;
-  box-sizing: border-box;
-  border-radius: 5px;
-  border: none;
-  background-color: rgb(255, 84, 0);
-}
-.join-button {
-  width: 120px;
-  height: 30px;
-  margin: 65px 0px 0px 140px ;
-  box-sizing: border-box;
-  border-radius: 4px;
-  border: none;
-  background-color: rgb(255, 84, 0);
-}
-.second-card {
-  background-color: #FAF9F6;
-  line-height: 20px;
-  position: relative;
-  border-radius: 15px;
-  filter: brightness(90%); 
-}
-.price-button1 {
-  width: 100px;
-  height: 40px;
-  margin: 10px 0px 40px 300px;
-  box-sizing: border-box;
-  border-radius: 5px;
-  border: none;
-  background-color: #4CBB17;
-}
-.m-text2 {
-  color: #4CBB17;
-  margin: 5px 40px 0px 20px;
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 2px;
-  position: relative;
-}
-.join-button1 {
-  width: 120px;
-  height: 30px;
-  margin: 50px 0px 30px 140px ;
-  box-sizing: border-box;
-  border-radius: 4px;
-  border: none;
-  background-color: #4CBB17;
+.left-side h4 {
+font-size: 1.1rem;
+font-weight: 500;
 }
 
-.third-card {
-  max-height: 600px;
-  background-color: #FAF9F6;
-  line-height: 20px;
-  position: relative;
-  border-radius: 15px;
+.sub-image img {
+  filter: brightness(90%);
+  margin-top: 80px;
+ 
+}
+.left-side {
+  margin-left: 50px;
+  line-height: 8px;
+  
+}
+.sub-btn {
+  width: 200px;
+  height: 44px;
+  background-color: yellow;
+  border-radius: 10px;
+  border: none;
   margin-top: 60px;
-  filter: brightness(90%); 
+  margin-bottom: 20px;
 }
-.price-button2 {
-  width: 100px;
-  height: 40px;
-  margin: 10px 0px 40px 300px;
-  box-sizing: border-box;
-  border-radius: 5px;
-  border: none;
-  background-color: #FFA500;
-}
-.join-button2 {
-  width: 120px;
-  height: 30px;
-  margin: 50px 0px 0px 140px ;
-  box-sizing: border-box;
-  border-radius: 4px;
-  border: none;
-  background-color: #FFA500;
-}
-.m-text3 {
-  color: #FFA500;
-  margin: 5px 40px 0px 20px;
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 2px;
-  position: relative;
-}
-.m-hr {
-  max-width: 300px;
-  margin: 0 auto;
-  border: 1px solid black;
-}
-.membership-container li {
-  color: black;
-  margin-left: 20px;
-  font-size: 1rem;
-  font-weight: 400;
-}
+
 /* subscription section end */
 /* Footer section start */
 .foot-container {
@@ -743,6 +646,7 @@ list-style: none;
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 br {
   display: none;
@@ -787,7 +691,7 @@ p {
     position: relative;
   }
   .banner-text {
-    margin: 0px 20px ;
+    margin-right: 120px;
   }
   .banner-text p {
     text-align: left;
@@ -804,7 +708,7 @@ p {
 }
 .banner-first-button {
   position: absolute;
-  right: 50%;
+  right: 52%;
 }
 .banner-second-button {
   padding: 16px 0px 0px 30px;
@@ -819,16 +723,16 @@ p {
   position: relative;
 }
 .banner-image img {
-  bottom: 20%;
-  margin-left: 70px;
   position: relative;
+  bottom: 20%;
+  margin-left: 20px;
 }
 
   .second-button {
  max-width: 155.74px;
  height: 72.58px;
  top: 50%;
- left: 60%;
+ left: 55%;
  }
 .second-button h3 {
   font-size: 1rem;
@@ -844,8 +748,8 @@ p {
  .first-button {
   max-width: 155.74px;
   height: 72.58px;
-  top: 70%;
-  left: 18%;
+  top: 63%;
+  left: 10%;
  }
  .first-button h3  {
 margin-left: 50px;
@@ -860,15 +764,15 @@ margin-bottom: 2px;
 margin-top: 2px;
 }
 .vicon {
-top: 73%;
-left: 25%;
+top: 65.5%;
+left: 17%;
 }
 .ball {
-  top: 72%;
-  left: 22%;
+  top: 64.6%;
+  left: 13.5%;
 }
 .color {
-  margin-right: 100px;
+  margin-right: 150px;
 }
 .banner-image {
   margin-top: 48px;
@@ -878,7 +782,7 @@ left: 25%;
 
 .change-text {
   position: absolute;
-  top: 170%;
+  top: 175%;
   margin-bottom: 58px;
 }
 .change-container p {
@@ -894,8 +798,12 @@ left: 25%;
   margin: 66px 20px;
   position: relative;
 }
+.run-text {
+  
+ margin: 66px 40px 31px 33px;
+}
 .run-btn {
-  width: 287px;
+  width: 275px;
   height: 54px;
   margin-top: 24px;
 }
@@ -904,7 +812,7 @@ left: 25%;
   max-height: 170px;
   position: absolute;
   top: 60%;
-  right: 5%;
+  right: 4%;
   margin: 31px 33px 35px 33px;
 }
 
@@ -997,12 +905,12 @@ margin-top: 14px;
 }
 
 .first-input {
-max-width: 170.5px;
+max-width: 150.5px;
 height: 48px;
 padding: 12px 40px 12px 10px;
 }
 .big-calculate-input {
-width: 360px;
+width: 324px;
 height: 48px;
 padding: 12px 20px;
 }
@@ -1060,31 +968,19 @@ max-width: 320px;
 }
 
 
-.sub-text  {
-  font-size: 2rem;
-  font-weight: 900;
-  margin-top: 66px;
-  }
-  .sub-text p {
-  font-size: 0.8rem;
-  font-weight: 400;
-  text-align: center;
-  }
-  .membership-container {
-    grid-template-columns: 1fr;
-    margin-top: 57px;
-    margin-bottom: 66px;
-  }
- .first-card {
-  width: 100%;
- }
-.second-card {
-  width: 100%;
-}
-.third-card {
-  width: 100%;
-}
 
+.subscription {
+  grid-template-columns: 1fr;
+  position: relative;
+  margin-bottom: 66px;
+}
+.left-side {
+  margin: 0 auto;
+  line-height: 20px;
+}
+.sub-image img {
+display: none;
+}
 
 
 .foot-container {
