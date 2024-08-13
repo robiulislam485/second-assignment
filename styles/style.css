@@ -13,7 +13,7 @@
   }
 
  body{
-  /* max-width: 1440px; */
+  width: 100%;
   height: 100%;
   margin: 0 auto;
   padding: 0 auto;
@@ -62,7 +62,7 @@ line-height: 20px;
 border: none;
 }
 .btn-primary:hover {
-  background-color: #00FFFF;
+  background-color: ;
 }
 .text-center {
   text-align: center;
@@ -103,12 +103,15 @@ header {
   }
   
   .nav-option {
+    width: 450px;
+    height: 46px;
     display: flex;
     gap: 47px;
     border: 1px solid rgba(255, 255, 255, 0.1) ;
     border-radius: 39px;
     margin-top: 57px;
   }
+  
   .nav-item {
     text-decoration: none;
     list-style: none;
@@ -116,9 +119,6 @@ header {
     font-size: 1.1rem;
     font-weight: 600;
   }
- .nav-bar li {
-  margin-bottom: 20px;
- }
 
   /* nav end */
   /* banner related style */
@@ -209,10 +209,10 @@ right: 37%;
 
 }
 .font-miama {
-  font-family: "Dancing Script", cursive;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
+  font-family: 'Miama', sans-serif;
+  font-size: 4.9rem;
+  font-weight: 900;
+  position: overlay;
 }
 
 /* banner end  */
@@ -785,33 +785,46 @@ p {
   } 
   .banner-content {
     margin: 0 auto;
+    position: relative;
+  }
+  .banner-text {
+    margin: 0px 20px ;
   }
   .banner-text p {
     text-align: left;
     margin-top: 28px;
-    }
+}
 .banner-button {
  max-width: 169px;
  height: 54px;
- margin-top: 28px;
+ margin: 28px 20px 0px 20px;
  display: grid;
  grid-template-columns: 1fr 1fr;
  gap: 14px;
  white-space: nowrap;
 }
+.banner-first-button {
+  position: absolute;
+  right: 50%;
+}
 .banner-second-button {
   padding: 16px 0px 0px 30px;
+  position: absolute;
+  left: 110%;
+
 }
 
 .banner-content {
   padding: 0px 20px; 
   margin-bottom: 48px;
+  position: relative;
 }
 .banner-image img {
   bottom: 20%;
   margin-left: 70px;
   position: relative;
-  }
+}
+
   .second-button {
  max-width: 155.74px;
  height: 72.58px;
@@ -1063,8 +1076,15 @@ max-width: 320px;
     margin-top: 57px;
     margin-bottom: 66px;
   }
-  
-
+ .first-card {
+  width: 100%;
+ }
+.second-card {
+  width: 100%;
+}
+.third-card {
+  width: 100%;
+}
 
 
 
